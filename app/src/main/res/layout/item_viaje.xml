@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/card_bg"
+    android:layout_marginBottom="10dp"
+    android:elevation="4dp">
+
+    <TextView
+        android:id="@+id/tvTituloViaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Viaje #1"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvHoraSalidaEstimada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora estimada de salida: 8:00 AM"
+        android:textSize="15sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvHoraLlegadaEstimada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora estimada de llegada: 12:00 PM"
+        android:textSize="15sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvOrdenServicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID Orden de servicio: 23"
+        android:textSize="15sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvVerTracking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver tracking"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:layout_marginTop="4dp"/>
+</LinearLayout>

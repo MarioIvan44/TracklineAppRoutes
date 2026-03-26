@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 🗺️ Mapa -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 🔍 Buscador -->
+    <LinearLayout
+        android:id="@+id/searchContainer"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:background="@android:color/transparent">
+
+        <EditText
+            android:id="@+id/etSearchLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Buscar lugar..."
+            android:padding="10dp"
+            android:background="@android:drawable/edit_text"
+            android:inputType="text"
+            android:drawableLeft="@android:drawable/ic_menu_search"/>
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:backgroundTint="@color/darkBlue"
+            android:textColor="@color/white"
+            android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+
+    <!-- 🚀 Botón iniciar viaje -->
+    <Button
+        android:id="@+id/btnStartTrip"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/darkBlue"
+        android:text="Iniciar viaje"
+        android:textColor="@color/white" />
+
+    <!-- ❌ Botón cancelar -->
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:backgroundTint="@color/darkBlue"
+        android:text="Cancelar"
+        android:textColor="@color/white" />
+
+    <!-- 🏁 Botón finalizar -->
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:backgroundTint="@color/darkBlue"
+        android:text="Finalizar viaje"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnCenterMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#1E88E5"
+        android:text="Mi posición"
+        android:layout_gravity="bottom"
+        android:textColor="#FFFFFF"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:backgroundTint="#E53935"
+        android:text="Cerrar sesión"
+        android:textColor="#FFFFFF"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnVolverViajes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver a Viajes"
+        android:backgroundTint="#1E88E5"
+        android:visibility="gone"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="bottom"
+        />
+
+
+</FrameLayout>

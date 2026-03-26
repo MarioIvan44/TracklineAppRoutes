@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_interfaz_m">
+
+    <!-- LinearLayout principal para el contenido -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Encabezado MEJORADO -->
+
+        <!-- Contenedor de búsqueda -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@color/darkBlue"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- TextView para el título -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Viajes"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <!-- ÍCONO DE CERRAR SESIÓN (REEMPLAZA AL BOTÓN) -->
+            <ImageView
+                android:id="@+id/ivLogout"
+                android:layout_width="46dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="2dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="Cerrar sesión"
+                android:focusable="true"
+                android:padding="8dp"
+                android:src="@drawable/logoicon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/etBuscarViaje"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Ingresa ID del viaje"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="12dp"
+                android:background="@drawable/edittext_background" />
+
+            <Button
+                android:id="@+id/btnBuscar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Buscar"
+                android:padding="12dp" />
+
+            <Button
+                android:id="@+id/btnLimpiarBusqueda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Limpiar"
+                android:padding="12dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Lista de tarjetas -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingHorizontal="12dp">
+
+            <LinearLayout
+                android:id="@+id/contenedorViajes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+        <!-- Controles de paginación -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btnAnterior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anterior" />
+
+            <TextView
+                android:id="@+id/tvPagina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Página 1 de 1"
+                android:layout_marginHorizontal="12dp"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/btnSiguiente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Siguiente" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

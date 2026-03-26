@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.ApiRuteMap" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/darkBlue</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="CustomAlertDialogTheme" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="colorPrimary">@color/black</item> <!-- Botones -->
+        <item name="android:background">@color/darkBlue</item> <!-- Fondo -->
+        <item name="android:textColorPrimary">@color/white</item> <!-- Título -->
+        <item name="android:textColorSecondary">@color/white</item> <!-- Mensaje -->
+    </style>
+
+</resources>
