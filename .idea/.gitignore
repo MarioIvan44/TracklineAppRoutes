@@ -1,3 +1,65 @@
-# Default ignored files
-/shelf/
-/workspace.xml
+# =========================
+# Android / Gradle
+# =========================
+.gradle/
+build/
+*/build/
+
+# Local configuration
+local.properties
+
+# Generated files
+captures/
+.externalNativeBuild/
+.cxx/
+
+# APK / AAB files
+*.apk
+*.aab
+
+# =========================
+# IDE - Android Studio
+# =========================
+.idea/
+*.iml
+
+# Pero conserva esto si trabajas en equipo
+!.idea/codeStyles
+!.idea/inspectionProfiles
+!.idea/runConfigurations
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Keystore (MUY IMPORTANTE)
+# =========================
+*.jks
+*.keystore
+*.pem
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+local.env
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Kotlin
+# =========================
+.kotlin/
+
+# =========================
+# Firebase / Secrets
+# =========================
+google-services.json
+secrets.properties
