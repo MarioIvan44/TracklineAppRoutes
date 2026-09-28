@@ -1,8 +1,18 @@
+import java.util.Properties
 
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+}
+
+// Carga las claves de API desde local.properties (archivo ignorado por git).
+// Ver local.properties.example para la plantilla.
+val localProperties = Properties().apply {
+    val file = rootProject.file("local.properties")
+    if (file.exists()) {
+        file.inputStream().use { load(it) }
+    }
 }
 
 android {
@@ -17,6 +27,17 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        // Clave de Google Maps inyectada en el AndroidManifest.xml
+        manifestPlaceholders["MAPS_API_KEY"] =
+            localProperties.getProperty("MAPS_API_KEY", "")
+
+        // Clave de OpenRouteService expuesta como BuildConfig.ORS_API_KEY
+        buildConfigField(
+            "String",
+            "ORS_API_KEY",
+            "\"${localProperties.getProperty("ORS_API_KEY", "")}\""
+        )
     }
 
     buildTypes {
@@ -39,6 +60,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 }
 

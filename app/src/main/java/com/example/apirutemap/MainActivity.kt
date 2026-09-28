@@ -423,7 +423,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
     private fun createRoute() {
         CoroutineScope(Dispatchers.IO).launch {
             val call = getRetrofit().create(ApiService::class.java).getRoute(
-                "eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6ImI3N2JhY2FiMjI5NDQzOWU4NTA0YjZkNDAwMDAwYmZjIiwiaCI6Im11cm11cjY0In0=",
+                BuildConfig.ORS_API_KEY,
                 start,
                 end
             )
@@ -1139,7 +1139,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
     private fun createRouteForExistingTrip() {
         CoroutineScope(Dispatchers.IO).launch {
             val call = getRetrofit().create(ApiService::class.java).getRoute(
-                "eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6ImI3N2JhY2FiMjI5NDQzOWU4NTA0YjZkNDAwMDAwYmZjIiwiaCI6Im11cm11cjY0In0=",
+                BuildConfig.ORS_API_KEY,
                 start, // LAT, LNG
                 end
             )

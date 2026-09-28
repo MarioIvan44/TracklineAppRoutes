@@ -21,7 +21,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCPTKNxHZ8EazrbA3t-Ws9xe0cBh2bYpiQ" />
+            android:value="${MAPS_API_KEY}" />
 
         <activity android:name=".LoginTransportistas"
             android:exported="true">
