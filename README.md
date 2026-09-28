@@ -5,10 +5,13 @@
 ![Google Maps](https://img.shields.io/badge/Mapas-Google%20Maps%20SDK-4285F4?style=for-the-badge&logo=googlemaps&logoColor=white)
 ![OpenRouteService](https://img.shields.io/badge/Rutas-OpenRouteService-2E7D32?style=for-the-badge&logo=openstreetmap&logoColor=white)
 ![Retrofit](https://img.shields.io/badge/HTTP-Retrofit%20%7C%20OkHttp-48B983?style=for-the-badge&logo=square&logoColor=white)
+![ExpoTécnico](https://img.shields.io/badge/ExpoT%C3%A9cnico-3er%20Lugar-FFD700?style=for-the-badge&logo=trophy&logoColor=white)
 
 ## Descripción del Proyecto
 
 **TrackLine App Routes** es la aplicación Android del ecosistema **Trackline**, un sistema de gestión y rastreo de órdenes de servicio para una agencia de logística y trámites aduanales. La app consume la API REST [ApiTrackline](https://github.com/MarioIvan44/ApiTrackline) y ofrece dos experiencias según el rol del usuario:
+
+El proyecto Trackline se desarrolló para **[SGL - Servicios Globales Logísticos](https://sgl-sv.com/)**, una empresa real de logística y trámites aduanales, y obtuvo el **3er lugar en Expo Técnica 2025**, en segundo año de bachillerato, con el Instituto Técnico Ricaldone.
 
 - El **transportista** traza la ruta de su viaje sobre el mapa y transmite su ubicación en tiempo real mientras conduce.
 - El **cliente** consulta sus viajes y sigue en el mapa el avance del transportista hasta la entrega.
@@ -166,7 +169,7 @@ Al abrir la app, concede el permiso de ubicación e inicia sesión con una cuent
 
 ## Autor
 
-**Mario Iván Vásquez**
+Desarrollada individualmente por **Mario Vásquez** como parte del Proyecto Técnico Científico (PTC) 2025 del Instituto Técnico Ricaldone, en segundo año de bachillerato.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mario-v%C3%A1squez-6a4948346/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MarioIvan44)
